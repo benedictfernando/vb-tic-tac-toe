@@ -49,14 +49,20 @@
             result = tl
 
             ' For trios with 'bottom-right' button as their common cell
-        ElseIf (br = r And r = tr Or br = b And b = bl And Not Me.br.Enabled Then
+        ElseIf (br = r And r = tr Or br = b And b = bl) And Not Me.br.Enabled Then
             result = br
 
         End If
 
         ' For tie situation
         If result = Nothing Then
-            ' check for tie
+            Dim tie As Boolean = True
+
+            For Each cell As Button In cells
+                If cell.Enabled Then tie = False : Exit For
+            Next
+
+            If tie Then result = "Tie"
         End If
 
         ' For results
