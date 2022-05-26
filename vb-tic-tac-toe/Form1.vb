@@ -87,7 +87,17 @@
         End If
     End Sub
 
-    Private Sub addScore(result As String)
-        ' to-do
+    Private Sub addScore(value As String)
+        Dim score As Integer
+
+        If value = "X" Then
+            score = CInt(p1Score.Text)
+            score += 1
+            p1Score.Text = score.ToString("D2")
+        ElseIf value = "O" Then
+            score = CInt(p2Score.Text)
+            score += 1
+            p2Score.Text = score.ToString("D2")
+        End If
     End Sub
 End Class
