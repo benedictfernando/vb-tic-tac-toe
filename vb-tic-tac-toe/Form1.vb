@@ -17,6 +17,13 @@
 
     Private Sub cell_Click(sender As Object, e As EventArgs) Handles tr.Click, tl.Click, t.Click, r.Click, m.Click, l.Click, br.Click, bl.Click, b.Click
         Dim button = CType(sender, Button)
-        button.Text = "OX"
+
+        If button.Enabled Then
+            button.Text = If(p1Turn, "X", "O")
+            p1Turn = Not p1Turn
+
+            button.Enabled = False
+            ' checkForWinner()
+        End If
     End Sub
 End Class

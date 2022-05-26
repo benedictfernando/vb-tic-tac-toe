@@ -197,6 +197,7 @@ Partial Class Form1
         '
         Me.tl.Cursor = System.Windows.Forms.Cursors.Hand
         Me.tl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tl.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.tl.Location = New System.Drawing.Point(63, 60)
         Me.tl.Name = "tl"
         Me.tl.Size = New System.Drawing.Size(114, 108)
@@ -207,6 +208,7 @@ Partial Class Form1
         '
         Me.t.Cursor = System.Windows.Forms.Cursors.Hand
         Me.t.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.t.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.t.Location = New System.Drawing.Point(183, 60)
         Me.t.Name = "t"
         Me.t.Size = New System.Drawing.Size(114, 108)
@@ -217,6 +219,7 @@ Partial Class Form1
         '
         Me.tr.Cursor = System.Windows.Forms.Cursors.Hand
         Me.tr.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tr.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.tr.Location = New System.Drawing.Point(303, 60)
         Me.tr.Name = "tr"
         Me.tr.Size = New System.Drawing.Size(114, 108)
@@ -227,6 +230,7 @@ Partial Class Form1
         '
         Me.l.Cursor = System.Windows.Forms.Cursors.Hand
         Me.l.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.l.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.l.Location = New System.Drawing.Point(63, 174)
         Me.l.Name = "l"
         Me.l.Size = New System.Drawing.Size(114, 108)
@@ -237,6 +241,7 @@ Partial Class Form1
         '
         Me.m.Cursor = System.Windows.Forms.Cursors.Hand
         Me.m.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.m.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.m.Location = New System.Drawing.Point(183, 174)
         Me.m.Name = "m"
         Me.m.Size = New System.Drawing.Size(114, 108)
@@ -247,6 +252,7 @@ Partial Class Form1
         '
         Me.r.Cursor = System.Windows.Forms.Cursors.Hand
         Me.r.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.r.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.r.Location = New System.Drawing.Point(303, 174)
         Me.r.Name = "r"
         Me.r.Size = New System.Drawing.Size(114, 108)
@@ -257,6 +263,7 @@ Partial Class Form1
         '
         Me.bl.Cursor = System.Windows.Forms.Cursors.Hand
         Me.bl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.bl.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.bl.Location = New System.Drawing.Point(63, 288)
         Me.bl.Name = "bl"
         Me.bl.Size = New System.Drawing.Size(114, 108)
@@ -267,6 +274,7 @@ Partial Class Form1
         '
         Me.b.Cursor = System.Windows.Forms.Cursors.Hand
         Me.b.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.b.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.b.Location = New System.Drawing.Point(183, 288)
         Me.b.Name = "b"
         Me.b.Size = New System.Drawing.Size(114, 108)
@@ -277,6 +285,7 @@ Partial Class Form1
         '
         Me.br.Cursor = System.Windows.Forms.Cursors.Hand
         Me.br.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.br.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.br.Location = New System.Drawing.Point(303, 288)
         Me.br.Name = "br"
         Me.br.Size = New System.Drawing.Size(114, 108)
