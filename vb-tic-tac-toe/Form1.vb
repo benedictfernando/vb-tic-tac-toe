@@ -17,7 +17,11 @@
     End Sub
 
     Private Sub resetScore_Click(sender As Object, e As EventArgs) Handles resetScore.Click
-        ' to-do
+        If MessageBox.Show("Accepting will also start a new game. " &
+                "Continue?", "Reset Score", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning) = DialogResult.Yes Then
+            p1Score.Text = "00" : p2Score.Text = "00" : newGame.PerformClick()
+        End If
     End Sub
 
     Private Sub cell_Click(sender As Object, e As EventArgs) Handles tr.Click, tl.Click, t.Click, r.Click, m.Click, l.Click, br.Click, bl.Click, b.Click
@@ -113,10 +117,10 @@
     End Sub
 
     Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        If (MessageBox.Show("Are you really sure to exit?",
+        If MessageBox.Show("Are you really sure to exit?",
                 "Exit Program", MessageBoxButtons.YesNo,
-                MessageBoxIcon.Stop) = DialogResult.Yes) Then
-            MessageBox.Show("Thanks for playing with us~" &
+                MessageBoxIcon.Stop) = DialogResult.Yes Then
+            MessageBox.Show("Thanks for playing with us~ " &
                 "'til we meet again :)")
         Else e.Cancel = True : End If
     End Sub
