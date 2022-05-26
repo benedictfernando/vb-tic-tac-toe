@@ -3,6 +3,7 @@
     Dim p1Turn As Boolean = True
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        MessageBox.Show("Welcome to C#'s Tic-Tac-Toe Game!")
         cells = {Me.tl, Me.t, Me.tr, Me.l, Me.m, Me.r, Me.bl, Me.b, Me.br}
     End Sub
 
@@ -109,5 +110,14 @@
             p1.BackColor = SystemColors.ControlDarkDark
             p2.BackColor = SystemColors.InactiveCaption
         End If
+    End Sub
+
+    Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        If (MessageBox.Show("Are you really sure to exit?",
+                "Exit Program", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Stop) = DialogResult.Yes) Then
+            MessageBox.Show("Thanks for playing with us~" &
+                "'til we meet again :)")
+        Else e.Cancel = True : End If
     End Sub
 End Class
