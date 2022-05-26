@@ -1,14 +1,18 @@
 ﻿Public Class Form1
-
+    Dim cells(9) As Button
     Dim p1Turn As Boolean = True
-    Dim cells = {
-        Me.tl, Me.t, Me.tr,
-        Me.l, Me.m, Me.r,
-        Me.bl, Me.b, Me.br
-    }
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        cells = {Me.tl, Me.t, Me.tr, Me.l, Me.m, Me.r, Me.bl, Me.b, Me.br}
+    End Sub
 
     Private Sub newGame_Click(sender As Object, e As EventArgs) Handles newGame.Click
-        ' to-do
+        p1Turn = True
+
+        For Each cell As Button In cells
+            cell.Text = ""
+            cell.Enabled = True
+        Next
     End Sub
 
     Private Sub resetScore_Click(sender As Object, e As EventArgs) Handles resetScore.Click
@@ -23,7 +27,7 @@
             p1Turn = Not p1Turn
 
             button.Enabled = False
-            ' checkForWinner()
+            checkForWinner()
         End If
     End Sub
 
@@ -67,7 +71,7 @@
         End If
 
         ' For results
-        If result = Not Nothing Then
+        If Not result = Nothing Then
             addScore(result)
 
             If result = "X" Then
@@ -76,7 +80,10 @@
                 result = "Player 2 wins!"
             End If
 
-            ' Show winner on a message box
+            ' Start new game
+            If MessageBox.Show(result) = DialogResult.OK Then
+                newGame.PerformClick()
+            End If
         End If
     End Sub
 
