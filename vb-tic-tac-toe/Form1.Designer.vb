@@ -38,8 +38,11 @@ Partial Class Form1
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
         Me.mainTable.SuspendLayout()
         Me.scoreBoard.SuspendLayout()
+        Me.gameOptions.SuspendLayout()
         Me.SuspendLayout()
         '
         'mainTable
@@ -158,6 +161,8 @@ Partial Class Form1
         Me.gameOptions.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.0!))
         Me.gameOptions.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.0!))
         Me.gameOptions.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.0!))
+        Me.gameOptions.Controls.Add(Me.Button10, 1, 0)
+        Me.gameOptions.Controls.Add(Me.Button11, 2, 0)
         Me.gameOptions.Dock = System.Windows.Forms.DockStyle.Fill
         Me.gameOptions.Location = New System.Drawing.Point(3, 402)
         Me.gameOptions.Name = "gameOptions"
@@ -256,6 +261,28 @@ Partial Class Form1
         Me.Button9.TabIndex = 10
         Me.Button9.UseVisualStyleBackColor = True
         '
+        'Button10
+        '
+        Me.Button10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button10.Font = New System.Drawing.Font("Century Gothic", 15.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
+        Me.Button10.Location = New System.Drawing.Point(31, 3)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(202, 46)
+        Me.Button10.TabIndex = 0
+        Me.Button10.Text = "New Game"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'Button11
+        '
+        Me.Button11.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button11.Font = New System.Drawing.Font("Century Gothic", 15.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
+        Me.Button11.Location = New System.Drawing.Point(239, 3)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(202, 46)
+        Me.Button11.TabIndex = 1
+        Me.Button11.Text = "Reset Score"
+        Me.Button11.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 21.0!)
@@ -272,6 +299,7 @@ Partial Class Form1
         Me.mainTable.ResumeLayout(False)
         Me.scoreBoard.ResumeLayout(False)
         Me.scoreBoard.PerformLayout()
+        Me.gameOptions.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -292,4 +320,6 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents Button10 As Button
+    Friend WithEvents Button11 As Button
 End Class
