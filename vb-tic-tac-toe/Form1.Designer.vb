@@ -24,22 +24,22 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.mainTable = New System.Windows.Forms.TableLayoutPanel()
         Me.scoreBoard = New System.Windows.Forms.TableLayoutPanel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.p1 = New System.Windows.Forms.Label()
+        Me.p2 = New System.Windows.Forms.Label()
+        Me.p1Score = New System.Windows.Forms.Label()
+        Me.p2Score = New System.Windows.Forms.Label()
         Me.gameOptions = New System.Windows.Forms.TableLayoutPanel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
+        Me.tl = New System.Windows.Forms.Button()
+        Me.t = New System.Windows.Forms.Button()
+        Me.tr = New System.Windows.Forms.Button()
+        Me.l = New System.Windows.Forms.Button()
+        Me.m = New System.Windows.Forms.Button()
+        Me.r = New System.Windows.Forms.Button()
+        Me.bl = New System.Windows.Forms.Button()
+        Me.b = New System.Windows.Forms.Button()
+        Me.br = New System.Windows.Forms.Button()
+        Me.newGame = New System.Windows.Forms.Button()
+        Me.resetScore = New System.Windows.Forms.Button()
         Me.mainTable.SuspendLayout()
         Me.scoreBoard.SuspendLayout()
         Me.gameOptions.SuspendLayout()
@@ -55,15 +55,15 @@ Partial Class Form1
         Me.mainTable.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
         Me.mainTable.Controls.Add(Me.scoreBoard, 0, 0)
         Me.mainTable.Controls.Add(Me.gameOptions, 0, 4)
-        Me.mainTable.Controls.Add(Me.Button1, 1, 1)
-        Me.mainTable.Controls.Add(Me.Button2, 2, 1)
-        Me.mainTable.Controls.Add(Me.Button3, 3, 1)
-        Me.mainTable.Controls.Add(Me.Button4, 1, 2)
-        Me.mainTable.Controls.Add(Me.Button5, 2, 2)
-        Me.mainTable.Controls.Add(Me.Button6, 3, 2)
-        Me.mainTable.Controls.Add(Me.Button7, 1, 3)
-        Me.mainTable.Controls.Add(Me.Button8, 2, 3)
-        Me.mainTable.Controls.Add(Me.Button9, 3, 3)
+        Me.mainTable.Controls.Add(Me.tl, 1, 1)
+        Me.mainTable.Controls.Add(Me.t, 2, 1)
+        Me.mainTable.Controls.Add(Me.tr, 3, 1)
+        Me.mainTable.Controls.Add(Me.l, 1, 2)
+        Me.mainTable.Controls.Add(Me.m, 2, 2)
+        Me.mainTable.Controls.Add(Me.r, 3, 2)
+        Me.mainTable.Controls.Add(Me.bl, 1, 3)
+        Me.mainTable.Controls.Add(Me.b, 2, 3)
+        Me.mainTable.Controls.Add(Me.br, 3, 3)
         Me.mainTable.Dock = System.Windows.Forms.DockStyle.Fill
         Me.mainTable.Location = New System.Drawing.Point(0, 0)
         Me.mainTable.Name = "mainTable"
@@ -87,10 +87,10 @@ Partial Class Form1
         Me.scoreBoard.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.0!))
         Me.scoreBoard.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
         Me.scoreBoard.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.0!))
-        Me.scoreBoard.Controls.Add(Me.Label1, 1, 0)
-        Me.scoreBoard.Controls.Add(Me.Label2, 4, 0)
-        Me.scoreBoard.Controls.Add(Me.Label3, 2, 0)
-        Me.scoreBoard.Controls.Add(Me.Label4, 3, 0)
+        Me.scoreBoard.Controls.Add(Me.p1, 1, 0)
+        Me.scoreBoard.Controls.Add(Me.p2, 4, 0)
+        Me.scoreBoard.Controls.Add(Me.p1Score, 2, 0)
+        Me.scoreBoard.Controls.Add(Me.p2Score, 3, 0)
         Me.scoreBoard.Dock = System.Windows.Forms.DockStyle.Fill
         Me.scoreBoard.Location = New System.Drawing.Point(3, 3)
         Me.scoreBoard.Name = "scoreBoard"
@@ -99,59 +99,59 @@ Partial Class Form1
         Me.scoreBoard.Size = New System.Drawing.Size(474, 51)
         Me.scoreBoard.TabIndex = 0
         '
-        'Label1
+        'p1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(31, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(136, 51)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Player 1"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.p1.AutoSize = True
+        Me.p1.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.p1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.p1.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
+        Me.p1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.p1.Location = New System.Drawing.Point(31, 0)
+        Me.p1.Name = "p1"
+        Me.p1.Size = New System.Drawing.Size(136, 51)
+        Me.p1.TabIndex = 0
+        Me.p1.Text = "Player 1"
+        Me.p1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label2
+        'p2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(305, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(136, 51)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Player 2"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.p2.AutoSize = True
+        Me.p2.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.p2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.p2.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
+        Me.p2.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.p2.Location = New System.Drawing.Point(305, 0)
+        Me.p2.Name = "p2"
+        Me.p2.Size = New System.Drawing.Size(136, 51)
+        Me.p2.TabIndex = 1
+        Me.p2.Text = "Player 2"
+        Me.p2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label3
+        'p1Score
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(173, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(60, 51)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "00"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.p1Score.AutoSize = True
+        Me.p1Score.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.p1Score.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.p1Score.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.p1Score.Location = New System.Drawing.Point(173, 0)
+        Me.p1Score.Name = "p1Score"
+        Me.p1Score.Size = New System.Drawing.Size(60, 51)
+        Me.p1Score.TabIndex = 2
+        Me.p1Score.Text = "00"
+        Me.p1Score.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label4
+        'p2Score
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(239, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(60, 51)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "00"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.p2Score.AutoSize = True
+        Me.p2Score.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.p2Score.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.p2Score.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.p2Score.Location = New System.Drawing.Point(239, 0)
+        Me.p2Score.Name = "p2Score"
+        Me.p2Score.Size = New System.Drawing.Size(60, 51)
+        Me.p2Score.TabIndex = 3
+        Me.p2Score.Text = "00"
+        Me.p2Score.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'gameOptions
         '
@@ -161,8 +161,8 @@ Partial Class Form1
         Me.gameOptions.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.0!))
         Me.gameOptions.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.0!))
         Me.gameOptions.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.0!))
-        Me.gameOptions.Controls.Add(Me.Button10, 1, 0)
-        Me.gameOptions.Controls.Add(Me.Button11, 2, 0)
+        Me.gameOptions.Controls.Add(Me.newGame, 1, 0)
+        Me.gameOptions.Controls.Add(Me.resetScore, 2, 0)
         Me.gameOptions.Dock = System.Windows.Forms.DockStyle.Fill
         Me.gameOptions.Location = New System.Drawing.Point(3, 402)
         Me.gameOptions.Name = "gameOptions"
@@ -171,117 +171,117 @@ Partial Class Form1
         Me.gameOptions.Size = New System.Drawing.Size(474, 52)
         Me.gameOptions.TabIndex = 1
         '
-        'Button1
+        'tl
         '
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button1.Location = New System.Drawing.Point(63, 60)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(114, 108)
-        Me.Button1.TabIndex = 2
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.tl.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.tl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tl.Location = New System.Drawing.Point(63, 60)
+        Me.tl.Name = "tl"
+        Me.tl.Size = New System.Drawing.Size(114, 108)
+        Me.tl.TabIndex = 2
+        Me.tl.UseVisualStyleBackColor = True
         '
-        'Button2
+        't
         '
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button2.Location = New System.Drawing.Point(183, 60)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(114, 108)
-        Me.Button2.TabIndex = 3
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.t.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.t.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.t.Location = New System.Drawing.Point(183, 60)
+        Me.t.Name = "t"
+        Me.t.Size = New System.Drawing.Size(114, 108)
+        Me.t.TabIndex = 3
+        Me.t.UseVisualStyleBackColor = True
         '
-        'Button3
+        'tr
         '
-        Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button3.Location = New System.Drawing.Point(303, 60)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(114, 108)
-        Me.Button3.TabIndex = 4
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.tr.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.tr.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tr.Location = New System.Drawing.Point(303, 60)
+        Me.tr.Name = "tr"
+        Me.tr.Size = New System.Drawing.Size(114, 108)
+        Me.tr.TabIndex = 4
+        Me.tr.UseVisualStyleBackColor = True
         '
-        'Button4
+        'l
         '
-        Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button4.Location = New System.Drawing.Point(63, 174)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(114, 108)
-        Me.Button4.TabIndex = 5
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.l.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.l.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.l.Location = New System.Drawing.Point(63, 174)
+        Me.l.Name = "l"
+        Me.l.Size = New System.Drawing.Size(114, 108)
+        Me.l.TabIndex = 5
+        Me.l.UseVisualStyleBackColor = True
         '
-        'Button5
+        'm
         '
-        Me.Button5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button5.Location = New System.Drawing.Point(183, 174)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(114, 108)
-        Me.Button5.TabIndex = 6
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.m.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.m.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.m.Location = New System.Drawing.Point(183, 174)
+        Me.m.Name = "m"
+        Me.m.Size = New System.Drawing.Size(114, 108)
+        Me.m.TabIndex = 6
+        Me.m.UseVisualStyleBackColor = True
         '
-        'Button6
+        'r
         '
-        Me.Button6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button6.Location = New System.Drawing.Point(303, 174)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(114, 108)
-        Me.Button6.TabIndex = 7
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.r.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.r.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.r.Location = New System.Drawing.Point(303, 174)
+        Me.r.Name = "r"
+        Me.r.Size = New System.Drawing.Size(114, 108)
+        Me.r.TabIndex = 7
+        Me.r.UseVisualStyleBackColor = True
         '
-        'Button7
+        'bl
         '
-        Me.Button7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button7.Location = New System.Drawing.Point(63, 288)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(114, 108)
-        Me.Button7.TabIndex = 8
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.bl.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.bl.Location = New System.Drawing.Point(63, 288)
+        Me.bl.Name = "bl"
+        Me.bl.Size = New System.Drawing.Size(114, 108)
+        Me.bl.TabIndex = 8
+        Me.bl.UseVisualStyleBackColor = True
         '
-        'Button8
+        'b
         '
-        Me.Button8.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button8.Location = New System.Drawing.Point(183, 288)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(114, 108)
-        Me.Button8.TabIndex = 9
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.b.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.b.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.b.Location = New System.Drawing.Point(183, 288)
+        Me.b.Name = "b"
+        Me.b.Size = New System.Drawing.Size(114, 108)
+        Me.b.TabIndex = 9
+        Me.b.UseVisualStyleBackColor = True
         '
-        'Button9
+        'br
         '
-        Me.Button9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button9.Location = New System.Drawing.Point(303, 288)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(114, 108)
-        Me.Button9.TabIndex = 10
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.br.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.br.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.br.Location = New System.Drawing.Point(303, 288)
+        Me.br.Name = "br"
+        Me.br.Size = New System.Drawing.Size(114, 108)
+        Me.br.TabIndex = 10
+        Me.br.UseVisualStyleBackColor = True
         '
-        'Button10
+        'newGame
         '
-        Me.Button10.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button10.Font = New System.Drawing.Font("Century Gothic", 15.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
-        Me.Button10.Location = New System.Drawing.Point(31, 3)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(202, 46)
-        Me.Button10.TabIndex = 0
-        Me.Button10.Text = "New Game"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.newGame.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.newGame.Font = New System.Drawing.Font("Century Gothic", 15.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
+        Me.newGame.Location = New System.Drawing.Point(31, 3)
+        Me.newGame.Name = "newGame"
+        Me.newGame.Size = New System.Drawing.Size(202, 46)
+        Me.newGame.TabIndex = 0
+        Me.newGame.Text = "New Game"
+        Me.newGame.UseVisualStyleBackColor = True
         '
-        'Button11
+        'resetScore
         '
-        Me.Button11.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button11.Font = New System.Drawing.Font("Century Gothic", 15.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
-        Me.Button11.Location = New System.Drawing.Point(239, 3)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(202, 46)
-        Me.Button11.TabIndex = 1
-        Me.Button11.Text = "Reset Score"
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.resetScore.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.resetScore.Font = New System.Drawing.Font("Century Gothic", 15.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
+        Me.resetScore.Location = New System.Drawing.Point(239, 3)
+        Me.resetScore.Name = "resetScore"
+        Me.resetScore.Size = New System.Drawing.Size(202, 46)
+        Me.resetScore.TabIndex = 1
+        Me.resetScore.Text = "Reset Score"
+        Me.resetScore.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -307,19 +307,19 @@ Partial Class Form1
     Friend WithEvents mainTable As TableLayoutPanel
     Friend WithEvents scoreBoard As TableLayoutPanel
     Friend WithEvents gameOptions As TableLayoutPanel
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Button10 As Button
-    Friend WithEvents Button11 As Button
+    Friend WithEvents tl As Button
+    Friend WithEvents t As Button
+    Friend WithEvents tr As Button
+    Friend WithEvents l As Button
+    Friend WithEvents m As Button
+    Friend WithEvents r As Button
+    Friend WithEvents bl As Button
+    Friend WithEvents b As Button
+    Friend WithEvents br As Button
+    Friend WithEvents p1 As Label
+    Friend WithEvents p2 As Label
+    Friend WithEvents p1Score As Label
+    Friend WithEvents p2Score As Label
+    Friend WithEvents newGame As Button
+    Friend WithEvents resetScore As Button
 End Class
