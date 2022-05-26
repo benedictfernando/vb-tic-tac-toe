@@ -58,6 +58,7 @@
         If result = Nothing Then
             Dim tie As Boolean = True
 
+            ' Check for any enabled cells
             For Each cell As Button In cells
                 If cell.Enabled Then tie = False : Exit For
             Next
@@ -67,8 +68,19 @@
 
         ' For results
         If result = Not Nothing Then
-            ' add score
-        End If
+            addScore(result)
 
+            If result = "X" Then
+                result = "Player 1 wins!"
+            ElseIf result = "O" Then
+                result = "Player 2 wins!"
+            End If
+
+            ' Show winner on a message box
+        End If
+    End Sub
+
+    Private Sub addScore(result As String)
+        ' to-do
     End Sub
 End Class
