@@ -29,6 +29,8 @@ Partial Class Form1
         Me.p1Score = New System.Windows.Forms.Label()
         Me.p2Score = New System.Windows.Forms.Label()
         Me.gameOptions = New System.Windows.Forms.TableLayoutPanel()
+        Me.newGame = New System.Windows.Forms.Button()
+        Me.resetScore = New System.Windows.Forms.Button()
         Me.tl = New System.Windows.Forms.Button()
         Me.t = New System.Windows.Forms.Button()
         Me.tr = New System.Windows.Forms.Button()
@@ -38,8 +40,6 @@ Partial Class Form1
         Me.bl = New System.Windows.Forms.Button()
         Me.b = New System.Windows.Forms.Button()
         Me.br = New System.Windows.Forms.Button()
-        Me.newGame = New System.Windows.Forms.Button()
-        Me.resetScore = New System.Windows.Forms.Button()
         Me.mainTable.SuspendLayout()
         Me.scoreBoard.SuspendLayout()
         Me.gameOptions.SuspendLayout()
@@ -171,6 +171,28 @@ Partial Class Form1
         Me.gameOptions.Size = New System.Drawing.Size(474, 52)
         Me.gameOptions.TabIndex = 1
         '
+        'newGame
+        '
+        Me.newGame.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.newGame.Font = New System.Drawing.Font("Century Gothic", 15.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
+        Me.newGame.Location = New System.Drawing.Point(31, 3)
+        Me.newGame.Name = "newGame"
+        Me.newGame.Size = New System.Drawing.Size(202, 46)
+        Me.newGame.TabIndex = 0
+        Me.newGame.Text = "New Game"
+        Me.newGame.UseVisualStyleBackColor = True
+        '
+        'resetScore
+        '
+        Me.resetScore.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.resetScore.Font = New System.Drawing.Font("Century Gothic", 15.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
+        Me.resetScore.Location = New System.Drawing.Point(239, 3)
+        Me.resetScore.Name = "resetScore"
+        Me.resetScore.Size = New System.Drawing.Size(202, 46)
+        Me.resetScore.TabIndex = 1
+        Me.resetScore.Text = "Reset Score"
+        Me.resetScore.UseVisualStyleBackColor = True
+        '
         'tl
         '
         Me.tl.Cursor = System.Windows.Forms.Cursors.Hand
@@ -260,28 +282,6 @@ Partial Class Form1
         Me.br.Size = New System.Drawing.Size(114, 108)
         Me.br.TabIndex = 10
         Me.br.UseVisualStyleBackColor = True
-        '
-        'newGame
-        '
-        Me.newGame.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.newGame.Font = New System.Drawing.Font("Century Gothic", 15.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
-        Me.newGame.Location = New System.Drawing.Point(31, 3)
-        Me.newGame.Name = "newGame"
-        Me.newGame.Size = New System.Drawing.Size(202, 46)
-        Me.newGame.TabIndex = 0
-        Me.newGame.Text = "New Game"
-        Me.newGame.UseVisualStyleBackColor = True
-        '
-        'resetScore
-        '
-        Me.resetScore.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.resetScore.Font = New System.Drawing.Font("Century Gothic", 15.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
-        Me.resetScore.Location = New System.Drawing.Point(239, 3)
-        Me.resetScore.Name = "resetScore"
-        Me.resetScore.Size = New System.Drawing.Size(202, 46)
-        Me.resetScore.TabIndex = 1
-        Me.resetScore.Text = "Reset Score"
-        Me.resetScore.UseVisualStyleBackColor = True
         '
         'Form1
         '
