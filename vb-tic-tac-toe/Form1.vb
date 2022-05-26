@@ -100,4 +100,14 @@
             p2Score.Text = score.ToString("D2")
         End If
     End Sub
+
+    Private Sub labelChange(sender As Object, e As EventArgs) Handles tr.EnabledChanged, tl.EnabledChanged, t.EnabledChanged, r.EnabledChanged, m.EnabledChanged, l.EnabledChanged, br.EnabledChanged, bl.EnabledChanged, b.EnabledChanged
+        If p1Turn Then
+            p1.BackColor = SystemColors.InactiveCaption
+            p2.BackColor = SystemColors.ControlDarkDark
+        Else
+            p1.BackColor = SystemColors.ControlDarkDark
+            p2.BackColor = SystemColors.InactiveCaption
+        End If
+    End Sub
 End Class
